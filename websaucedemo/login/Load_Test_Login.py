@@ -28,7 +28,7 @@ def login_and_close_browser():
     # Tunggu hingga halaman beranda muncul
     try:
         # Assertion: Memastikan bahwa elemen produk muncul setelah login berhasil
-        WebDriverWait(webdriver_instance, 20).until(EC.presence_of_element_located((By.CLASS_NAME, "MainContent")))
+        WebDriverWait(webdriver_instance, 20).until(EC.presence_of_element_located((By.CLASS_NAME, "inventory_list")))
         print("Assertion berhasil! Login berhasil dan halaman beranda muncul.")
 
         time.sleep(5)
